@@ -78,8 +78,8 @@ const registerForm = ref({
 const formRef = ref<FormInstance>()
   // 校验规则
 const validateUsername = (rule: any, value: any, callback: any) => {
-  if (value.length < 4) {
-    callback(new Error('用户名长度不能小于4位'))
+  if (value.length < 3) {
+    callback(new Error('用户名长度不能小于3位'))
   } else {
     callback()
   }
